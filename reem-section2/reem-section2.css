@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.reem-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "reem-a1 reem-a2"
+    "reem-a3 reem-a4";
+  padding: 1.3rem;
+  overflow: hidden;
+}
+
+.reem-part1 {
+  grid-area: reem-a1;
+  position: relative;
+}
+
+.reem-img1 {
+  width: 37.5rem;
+}
+
+.reem-img2 {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 11rem;
+}
+
+.reem-img3 {
+  position: absolute;
+  top: 110px;
+  left: 385px;
+  width: 12.5rem;
+  border: 0;
+}
+
+.reem-sid {
+  margin-top:3.7rem;
+  grid-area: reem-a2;
+  position: relative;
+}
+
+.reem-s {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  position: relative;
+  width: fit-content;
+}
+
+.reem-el1 {
+  position: absolute;
+  top: -250px;
+  right: -20px;
+  width: fit-content;
+}
+
+.reem-p {
+  margin-top: 1.3rem;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.411);
+}
+
+.reem-button {
+  margin-top:1.2rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background: none;
+  color: rgb(97, 97, 218);
+  border: 1px solid rgb(155, 155, 250);
+  width: 8rem;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reem-button:hover {
+  background-color: blue;
+  color: white;
+  opacity: 2px;
+}
+
+.reem-h {
+  font-size: 44px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* part2-section2 */
+.reem-part2 {
+  position: relative;
+  grid-area: reem-a3;
+}
+
+.reem-sid2 {
+  position: relative;
+  grid-area: reem-a4;
+  right: -160px;
+}
+
+.reem-s2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  padding:1.2rem;
+  right: 0;
+}
+
+.reem-el2 {
+  position: absolute;
+  top: -130px;
+  left: -20px;
+}
+.reem-img5 {
+  width: 32rem;
+}
+.reem-img4 {
+  position: absolute;
+  top: 35px;
+  left:-55px;
+  width: 12rem;
+}
+
+/* part3 */
+.reem-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "reem-a5 reem-a6 reem-a7";
+}
+
+.reem-alaa-m {
+  display: flex;
+}
+.reem-p8 {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 88px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.reem-p8 p {
+  margin-left:6.2rem;
+}
+.reem-p9 {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 88px;
+  font-weight: bold;
+  margin-left: 1.7rem;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reem-li1 {
+  font-weight: bold;
+  font-size: 27px;
+  list-style: none;
+  margin-right:0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.reem-img6 {
+  grid-area: reem-a5;
+  width: 14.3rem;
+}
+
+.reem-img7 {
+  grid-area: reem-a6;
+  width: 14.4rem;
+}
+
+.reem-part3 {
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  background-image: url(../reem-img/Vector.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.reem-parent {
+  grid-area: reem-a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reem-ldash {
+  width: 0.3rem;
+  height: 3.7rem;
+  border-left: 3px dashed rgba(0, 0, 0, 0.61);
+}
+
+.reem-pcircle {
+  width: 3.4rem;
+  height: 3.1rem;
+  padding:0.3rem;
+  border-radius: 50%;
+  border: 3px dashed rgba(0, 0, 0, 0.61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reem-circle {
+  width: 2.5rem;
+  height: 2.1rem;
+  border-radius: 60%;
+  background-color: black;
+}
+
+.reem-circle1 {
+  background-color: blue;
+}
+
+@media (max-width: 1200px) {
+  .reem-container {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "reem-a1"
+      "reem-a2"
+      "reem-a3"
+      "reem-a4";
+      gap: 6rem;
+      width: fit-content;
+  
+  }
+
+  .reem-part1,
+  .reem-sid,
+  .reem-part2,.reem-sid2{
+    margin: 0 auto;
+    align-items: center;
+
+  }
+
+ 
+  .reem-p8 .reem-li1 {
+    margin-left: 6.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reem-container2 {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "reem-a5"
+      "reem-a6"
+      "reem-a7";
+      width:fit-content;
+  }
+
+  .reem-part3 {
+    flex-direction: column;
+    text-align: center;
+   width: 100vh;
+   background-position-x: center;
+   background-size: 100vh;
+  
+  }
+  .reem-parent {
+    width: 80%;
+  }
+
+  .reem-el1 {
+    position: absolute;
+    bottom: 300px;
+  }
+}
